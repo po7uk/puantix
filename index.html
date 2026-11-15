@@ -61,4 +61,15 @@ input[type=date],input[type=time]{width:calc(100% - 5px);max-width:calc(100% - 5
 .fmInsufficient{background:#fff0f0!important;border:1px solid #cf4444;color:#9b1f1f}.fmBalanceInfo strong{font-size:inherit;margin:0;display:inline}
 @media(min-width:430px){.dailyRow{flex-direction:row;align-items:start;justify-content:space-between}.dailyRow .actions{margin-left:auto;flex:0 0 auto}}
 @media(max-width:385px){.fmWeekTop{align-items:flex-start}.fmToggle button{padding:7px 11px}.dailyRow .muted,.dailyRow .tiny{font-size:11px}}
+
+/* Puantix 11.0 — FM durum reports */
+.fmReportHero{background:#102c40;color:#fff;padding:16px;border-radius:15px;margin-bottom:11px;min-width:0}
+.fmReportHero .small,.fmReportHero .tiny{color:#b9d0dc}.fmReportHero strong{display:block;font-size:clamp(22px,6vw,30px);margin:7px 0;overflow-wrap:anywhere}
+.fmReportGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:10px}
+.fmReportGrid>.stat{min-width:0}.fmReportGrid .stat strong{font-size:clamp(16px,4.7vw,20px);margin:5px 0 6px}
+.fmReportExpiry{border:1px solid #d7e6ed;border-radius:13px;display:flex;align-items:start;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:13px;background:#f8fafb}
+.fmReportExpiry>span{min-width:0;overflow-wrap:anywhere}.fmExpiryValue{font-weight:750;font-size:18px;text-align:right}.fmExpiryValue small{display:block;font-size:12px;font-weight:500;color:#657789;margin-top:4px}
+.reportFMMonth{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:12px 0}.reportFMMonth>div{min-width:0;padding:10px;background:#fff;border-radius:10px}.reportFMMonth span,.weekFMChoices span{display:block;color:#687e8e;font-size:11px}.reportFMMonth strong,.weekFMChoices strong{display:block;color:#1d3547;margin-top:6px;font-size:12px;overflow-wrap:anywhere}
+.weekReportTitle{font-size:13px;margin:18px 0 5px;color:#334c5e}.weekFMChoices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:10px}.weekFMChoices>div{background:#e7f3ef;border-radius:9px;padding:9px;min-width:0}.weekFMChoices>div+div{background:#f0eefb}
+@media(max-width:350px){.fmReportGrid,.reportFMMonth,.weekFMChoices{gap:6px}.fmReportGrid>.stat{padding:10px}.fmReportExpiry{padding:10px}}
 </style></head><body><main id="app" class="app"></main><nav class="tabs" id="tabs"></nav><script src="app.js" defer></script></body></html>
