@@ -1,10 +1,18 @@
-# Puantix 10.0 — iPhone PWA
+# Puantix 11.1 — Açılış hatası düzeltildi
+
+Puantix 11.0 paketinde atlanan `fixedActive` ve `payrollMonth` fonksiyonları geri eklendi. Ana ekran ve Bordro tekrar açılır. FM Durumu raporları 11.0 ile aynen korunur. Uygulama önbelleği 11.1 olarak güncellendi.
+
+Yayın deposu: `https://github.com/po7uk/puantix` (`main / root`). Yayın URL: `https://po7uk.github.io/puantix/`. ZIP içindeki dosyaları doğrudan deponun ana dizinine yükleyin. **Yerel Safari verilerini temizlemeyin.** `mesaitakip-v2` veri anahtarı korunmaktadır.
+
+---
+
+# Puantix 11.1 — iPhone PWA
 
 ## Güncelleme ve veri güvenliği
 
 1. Puantix'te **Ayarlar → Veri ve yedekleme → JSON yedeği indir** ile önce yedek oluşturun.
-2. Bu paketin `mesaitakip/` klasörünün **içindeki** dosyaları GitHub'daki `po7uk/mesaitakip` deposunun `main` branch'inin köküne yükleyin. `mesaitakip` klasörünü depo içinde ayrıca oluşturmayın.
-3. GitHub Pages yayınını `main / (root)` olarak bırakın. Yayın adresi: `https://po7uk.github.io/mesaitakip/`.
+2. Bu paketin `mesaitakip/` klasörünün **içindeki** dosyaları GitHub'daki `po7uk/puantix` deposunun `main` branch'inin köküne yükleyin. `mesaitakip` klasörünü depo içinde ayrıca oluşturmayın.
+3. GitHub Pages yayınını `main / (root)` olarak bırakın. Yayın adresi: `https://po7uk.github.io/puantix/`.
 4. iPhone'da uygulamayı tamamen kapatıp yeniden açın; gerekiyorsa Safari'de aynı adresi yenileyin.
 
 Mevcut `localStorage` anahtarı **`mesaitakip-v2`** korunur. GitHub kodu herkese açıktır, fakat yerel çalışma/maaş/izin kayıtları GitHub'a yüklenmez. Safari site verilerini silmek veri kaybına yol açabilir; yedek dosyalarını güvenli tutun.
