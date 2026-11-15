@@ -1,3 +1,19 @@
+# Puantix 11.3 — Özet ekranında FM İzin Durumu
+
+- Özet ekranında **Bu ay yapılan FM** kartından sonra yeni **FM İzin Durumu** kartı eklendi.
+- Bu ay **izne çevrilen FM**: çalışma tarihinin ait olduğu ayda, 1,25 / 1,50 / 2,00 katsayıları uygulanarak hesaplanır.
+- **Toplam kalan FM izni**: seçili ayın sonu itibarıyla kullanılabilir olan tek toplam bakiye. Daha sonraki aylarda yapılan kullanımlar geçmiş ay bakiyesini azaltmaz.
+- Bu ay **kullanılan FM izni**: izin kullanım tarihine göre.
+- Bu ay **süresi dolan FM izni**: hakkın son kullanım tarihine göre, ücret dönüşümü öncesinde kullanılmamış süre.
+- Eski Pazar ve Pzt–Cmt hakları tek toplamda, son kullanım tarihi önceliği korunarak hesaplanır.
+- Mevcut veriler ve diğer ekranlar korunmuştur. Veri saklama anahtarı: `mesaitakip-v2`.
+
+## Güncelleme
+
+Yayın deposu: https://github.com/po7uk/puantix (main / root). ZIP içindeki **dosyaları** repo ana dizinine yükleyin. GitHub Pages adresi: https://po7uk.github.io/puantix/ . Önce Ayarlar üzerinden JSON yedeğinizi alın. Safari site verilerini silmeyin.
+
+---
+
 # Puantix 11.2 — FM izin hakkı tarih gösterimi
 
 Puantix 11.0 paketinde atlanan `fixedActive` ve `payrollMonth` fonksiyonları geri eklendi. Ana ekran ve Bordro tekrar açılır. FM Durumu raporları 11.0 ile aynen korunur. Uygulama önbelleği 11.1 olarak güncellendi.
