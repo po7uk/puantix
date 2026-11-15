@@ -33,4 +33,32 @@ input[type="date"],input[type="time"],input[type="month"]{min-width:0;max-width:
 .wheelScroll{min-width:0}.wheelOption{min-width:0}
 .netPrimary{display:block;font-size:clamp(20px,6vw,25px)!important;line-height:1.25;margin:5px 0 3px}
 @media(max-width:360px){.app{padding-left:10px;padding-right:10px}.panel{padding:12px}.formgrid,.timeinputs,.split{gap:7px}.tab{font-size:9px}.emoji{font-size:16px}}
+
+/* Puantix 9.0 – accessible compact weekly reviews */
+.dailyRecord{border-bottom:1px solid #e9eef2;padding:12px 0}
+.dailyRow{display:flex;flex-direction:column;gap:8px;min-width:0}
+.dailyRow strong{font-size:14px;color:#1b3042}
+.dailyRow .actions{justify-content:flex-end;gap:7px}
+.dailyRow .muted,.dailyRow .tiny{line-height:1.5}
+.fmWeekSummary{border:1px solid #c8e9df;background:linear-gradient(110deg,#f1faf7,#e6f5f0);border-radius:15px;padding:13px 12px;margin:9px 0 15px;min-width:0}
+.fmWeekSummary.sunday{border-color:#dcd9fa;background:linear-gradient(110deg,#f7f6fd,#efedfc)}
+.fmWeekTop{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.fmWeekTop>strong{font-size:14px;color:#163a3e}
+.fmWeekSummary.sunday .fmWeekTop>strong{color:#463c74}
+.fmToggle{display:inline-flex;border-radius:22px;background:#fff;border:1px solid #d4e1e7;overflow:hidden;flex:0 0 auto}
+.fmToggle button{background:transparent;color:#335369;border:0;padding:8px 13px;font-weight:700;font-size:13px;cursor:pointer}
+.fmToggle button.picked{background:#087b6f;color:#fff;border-radius:22px}
+.fmWeekSummary.sunday .fmToggle button.picked{background:#6356a8}
+.fmWeekBottom{display:flex;align-items:end;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-top:9px}
+.fmWeekBottom strong{font-size:19px;max-width:100%;overflow-wrap:anywhere}
+.fmLot{padding:10px 0;border-bottom:1px solid #e9eef2}
+.fmLot strong{display:block;margin-bottom:4px;font-size:13px}
+#annualWarning{background:#fff0f0;border:1px solid #df7d7d;color:#ad2424;font-weight:500}
+input[type=date],input[type=time]{width:calc(100% - 5px);max-width:calc(100% - 5px);min-width:0;padding:9px 6px;box-sizing:border-box;font-size:15px}
+.formgrid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:12px}
+.formgrid>div{min-width:0;overflow:hidden}
+.panel{overflow:clip}
+.fmInsufficient{background:#fff0f0!important;border:1px solid #cf4444;color:#9b1f1f}.fmBalanceInfo strong{font-size:inherit;margin:0;display:inline}
+@media(min-width:430px){.dailyRow{flex-direction:row;align-items:start;justify-content:space-between}.dailyRow .actions{margin-left:auto;flex:0 0 auto}}
+@media(max-width:385px){.fmWeekTop{align-items:flex-start}.fmToggle button{padding:7px 11px}.dailyRow .muted,.dailyRow .tiny{font-size:11px}}
 </style></head><body><main id="app" class="app"></main><nav class="tabs" id="tabs"></nav><script src="app.js" defer></script></body></html>
