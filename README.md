@@ -1,4 +1,4 @@
-# Puantix 11.1 — Açılış hatası düzeltildi
+# Puantix 11.2 — FM izin hakkı tarih gösterimi
 
 Puantix 11.0 paketinde atlanan `fixedActive` ve `payrollMonth` fonksiyonları geri eklendi. Ana ekran ve Bordro tekrar açılır. FM Durumu raporları 11.0 ile aynen korunur. Uygulama önbelleği 11.1 olarak güncellendi.
 
@@ -54,3 +54,8 @@ Haftalık 40 saat esnek çalışma; 1,25 / 1,50 / 2,00 FM; saatlik net ücret `(
 
 ## Puantix 11.0 — Raporlar: FM Durumu
 Yıllık raporda kazanılan FM (ham saat), ücret seçilen FM, katsayılı izin olarak kazanılan FM, yıl içinde kullanılan FM izni, yıl sonu/bugün kalan toplam FM izni ve ilgili yıl bordrolarına aktarılan süresi dolmuş izin ödemeleri ayrı gösterilir. Ay açılımında haftalık Pzt–Cmt ve Pazar ücret/izin seçimleri görünür. Ücret karşılıkları için hak kazanılan dönemin baz saatlik ücreti korunur.
+
+
+## Puantix 11.2
+
+Takvim > FM izin haklarım > Haklar bölümünde fazla mesai haftasının başlangıcı yerine, hakkın kullanılmaya başlandığı sonraki pazartesi gösterilir. Hesaplama ve kayıt formatı değişmemiştir.
