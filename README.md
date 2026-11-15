@@ -1,19 +1,8 @@
 # Puantix 7.0 — iPhone PWA
 
-GitHub Pages kurulumu: ZIP içindeki `mesaitakip` klasörünün **içeriğini** mevcut `po7uk/mesaitakip` deposunun ana dizinine yükleyin. Repo adını değiştirmeyin.
-
 ## Önce yedek
 
 Uygulamada Ayarlar → Veri ve yedekleme → JSON yedeği indir. Yeni sürümü yüklemeden önce yedeği Dosyalar uygulamasında saklayın.
-
-## Değişiklikler
-- Puantix marka ve iPhone simgesi
-- iOS'ta başlangıç/bitiş saatleri için yerel saat seçici; net süreler ve saatlik izin için parmakla kaydırmalı saat/dakika çarkı
-- Ocak zorunlu ve Temmuz isteğe bağlı zam (% iki ondalık); uygulanma yılına bağlı
-- Çift maaş ayları (net + kıdem iki kat); sabit gelirde isteğe bağlı çift ödeme
-- Kıdem tarihçesi veya işe başlangıç tarihi üzerinden tamamlanmış yıl hesabı; saatlik FM tabanı (net+kıdem)/225
-- Bordro, özet ve yıllık raporda ilgili ayın hesapları
-- Tarihli geçmiş maaşların korunması ve geçmiş bordrodaki gerçekleşen ödemelerin saklanması
 
 ## Veri güvenliği ve saklama
 
