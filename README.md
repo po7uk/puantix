@@ -1,4 +1,4 @@
-# Puantix 1.1 — İlk yayın sürümü
+# Puantix 1.3 — Döngüsel saat/dakika çarkları
 
 Bu paket GitHub Pages üzerinde `https://po7uk.github.io/puantix/` adresine yayınlamak içindir.
 
@@ -13,7 +13,7 @@ Bu paket GitHub Pages üzerinde `https://po7uk.github.io/puantix/` adresine yay�
 
 ## Sürüm ve veri uyumluluğu
 
-- Kullanıcıya gösterilen ürün sürümü **Puantix 1.1** olarak güncellendi.
+- Kullanıcıya gösterilen ürün sürümü **Puantix 1.3** olarak güncellendi.
 - Yerel veri saklama anahtarı aynıdır: `mesaitakip-v2`. Uygulama sürümü 1.0, veri şeması sürümü 2 ile karıştırılmamalıdır.
 - Saatlik izin hakkı Ayarlar altında her yıl için değiştirilebilir; Yardım / SSS ekranı vardır.
 - iOS önbellek kontrolü için servis çalışanının önbellek adı ve `app.js` kaynak bağlantısı yenilendi.
@@ -32,3 +32,19 @@ ZIP içindeki **9 dosyanın tamamını** `po7uk/puantix` deposunda `main` branch
 - Sıfırlanan veriler geri alınamaz; önceden dışa aktarılmış JSON yedeğiyle geri yüklenebilir.
 - Yardım/SSS: reset ve yedek, iOS güncelleme davranışı, Özet izin durumu, doğrudan FM'nin bu ay/devreden ayrımı ve süresi dolan FM izni bordrosu.
 - Çalışma ve ödeme hesaplama kuralları değiştirilmemiştir.
+
+## Sürüm 1.2 — Günlük net süre
+
+- Günlük Kayıt ekranında yeni bir gün için net normal çalışma varsayılanı **8 saat 00 dakika** oldu.
+- Kullanıcı saat ve dakika seçicisiyle varsayılanı değiştirebilir.
+- Daha önce kayıt yapılmış günler açıldığında kaydedilmiş çalışma süresi korunur; 8 saate sıfırlanmaz.
+- Giriş/çıkış saatlerinden hesaplama ve haftalık toplu giriş varsayılanları değiştirilmedi.
+- Kullanıcı verileri ve yerel saklama anahtarı değiştirilmedi.
+
+## Sürüm 1.3 — Süre seçimleri
+
+- Saat ve dakika alanına dokunulduğunda açılan iki sütunlu dokunmatik çark, kaydırarak seçim yapmaya devam eder.
+- Dakika çarkında **00’ın hemen önünde 59**, **59’un hemen sonrasında 00** bulunur. Saat çarkı 00–24 aralığında benzer döngü uygular.
+- Saat ve dakika birbirinden bağımsızdır; **24 saat 00 dakika** üst sınırına uyulur.
+- Başlangıç ve bitiş için tarayıcının yerel `time` kontrolü değiştirilmedi.
+- Mevcut kayıtlar ve `mesaitakip-v2` yerel depolama anahtarı aynen korundu.
