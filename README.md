@@ -1,4 +1,4 @@
-# Puantix 1.3 — Döngüsel saat/dakika çarkları
+# Puantix 1.4 — Haftalık toplu giriş kolaylıkları
 
 Bu paket GitHub Pages üzerinde `https://po7uk.github.io/puantix/` adresine yayınlamak içindir.
 
@@ -13,7 +13,7 @@ Bu paket GitHub Pages üzerinde `https://po7uk.github.io/puantix/` adresine yay�
 
 ## Sürüm ve veri uyumluluğu
 
-- Kullanıcıya gösterilen ürün sürümü **Puantix 1.3** olarak güncellendi.
+- Kullanıcıya gösterilen ürün sürümü **Puantix 1.4** olarak güncellendi.
 - Yerel veri saklama anahtarı aynıdır: `mesaitakip-v2`. Uygulama sürümü 1.0, veri şeması sürümü 2 ile karıştırılmamalıdır.
 - Saatlik izin hakkı Ayarlar altında her yıl için değiştirilebilir; Yardım / SSS ekranı vardır.
 - iOS önbellek kontrolü için servis çalışanının önbellek adı ve `app.js` kaynak bağlantısı yenilendi.
@@ -48,3 +48,8 @@ ZIP içindeki **9 dosyanın tamamını** `po7uk/puantix` deposunda `main` branch
 - Saat ve dakika birbirinden bağımsızdır; **24 saat 00 dakika** üst sınırına uyulur.
 - Başlangıç ve bitiş için tarayıcının yerel `time` kontrolü değiştirilmedi.
 - Mevcut kayıtlar ve `mesaitakip-v2` yerel depolama anahtarı aynen korundu.
+
+## Sürüm 1.4 — Haftalık toplu giriş
+- Haftalık toplu giriş açılırken güncel haftanın pazartesi günü varsayılan seçilir. Önceki hafta seçimi otomatik taşınmaz.
+- “Pzt–Cum boş günleri 8 saat doldur” ile kayıt olmayan beş iş günü için net çalışma süresi 08:00 yazılır. Önceden kayıtlı günler korunur. Bu işlem sadece formu doldurur; değişiklikler “Haftayı kaydet” ile kaydedilir.
+- Yardım/SSS güncellendi.
