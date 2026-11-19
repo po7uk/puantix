@@ -1,4 +1,24 @@
-# Puantix 1.4.1 — Haftalık toplu giriş kolaylıkları
+# Puantix 1.6 — Akıllı kayıt
+
+Bu sürüm, 1.5.1 güncellemesinin üzerine eksik gün uyarısı, tatil koruması, kaydı çoğaltma ve geri alma ekler.
+
+## Önceki sürüm: Takvimde ödeme kapanışı
+
+- Takvim ekranındaki aylık takvimin hemen altında seçili ayın ödeme kapanış tarihi gösterilir.
+- Kapanış günü takvim üzerinde çerçeve ile işaretlenmeye devam eder.
+- Takvim alanı yalnızca bilgi verir; kapanış günü Ayarlar veya mevcut Özet ekranından yönetilir.
+- Mevcut hesaplamalar, kayıtlar ve gizlilik seçenekleri korunur.
+- Takvim kapanış özelliği 1.5.1 sürümünden korunur.
+
+# Puantix 1.5 — Gizlilik ve güncelleme denetimi
+
+- Her yeni açılışta para tutarları gizlidir. Üstteki göz düğmesiyle Özet, Bordro, Raporlar, Takvim ve Ayarlar ekranlarında ortak göster/gizle.
+- Parasal giriş alanlarının değerleri de gizli görünümde maskelenir. Saat ve izin süreleri gizlenmez.
+- Ayarlar içindeki “Güncellemeleri denetle” düğmesi ve yeni sürüm uyarısı `version.json` üzerinden çalışır.
+- Service Worker ağ öncelikli çalışır; çevrimdışı durumda önbellek kullanır.
+- Yerel veri anahtarı değiştirilmedi: `mesaitakip-v2`. Verileri güncelleme işlemi silmez.
+
+# Puantix 1.5 — Haftalık toplu giriş kolaylıkları
 
 Bu paket GitHub Pages üzerinde `https://po7uk.github.io/puantix/` adresine yayınlamak içindir.
 
@@ -13,14 +33,14 @@ Bu paket GitHub Pages üzerinde `https://po7uk.github.io/puantix/` adresine yay�
 
 ## Sürüm ve veri uyumluluğu
 
-- Kullanıcıya gösterilen ürün sürümü **Puantix 1.4.1** olarak güncellendi.
+- Kullanıcıya gösterilen ürün sürümü **Puantix 1.5** olarak güncellendi.
 - Yerel veri saklama anahtarı aynıdır: `mesaitakip-v2`. Uygulama sürümü 1.0, veri şeması sürümü 2 ile karıştırılmamalıdır.
 - Saatlik izin hakkı Ayarlar altında her yıl için değiştirilebilir; Yardım / SSS ekranı vardır.
 - iOS önbellek kontrolü için servis çalışanının önbellek adı ve `app.js` kaynak bağlantısı yenilendi.
 
 ## GitHub Pages yükleme
 
-ZIP içindeki **9 dosyanın tamamını** `po7uk/puantix` deposunda `main` branch kök dizinine yükleyin. Alt klasör oluşturmayın. GitHub Pages ayarı `main / (root)` olmalıdır.
+ZIP içindeki **10 dosyanın tamamını** `po7uk/puantix` deposunda `main` branch kök dizinine yükleyin. Alt klasör oluşturmayın. GitHub Pages ayarı `main / (root)` olmalıdır.
 
 **Veri güvenliği:** Güncellemeden önce uygulamadan JSON yedeği alın. Safari site verilerini ya da eski ana ekran uygulamasını doğrulamadan silmeyin.
 
@@ -55,9 +75,18 @@ ZIP içindeki **9 dosyanın tamamını** `po7uk/puantix` deposunda `main` branch
 - Yardım/SSS güncellendi.
 
 
-## 1.4.1 — Açılış ve önbellek düzeltmesi
+## 1.5 — Açılış ve önbellek düzeltmesi
 
 - HTML içindeki JS sürüm numarası 1.4.1 olarak güncellendi (1.4 paketinde yanlışlıkla 1.3 kalmıştı).
 - Service Worker sürümü ve önbellek anahtarı yenilendi.
 - Başlangıç hatalarında boş ekran yerine verileri korumayı hatırlatan uyarı gösterilir.
 - Haftalık giriş, Pzt–Cum 8 saat doldurma ve diğer kayıtlar korunur.
+
+
+## Puantix 1.6 — Akıllı kayıt
+- Yeni Günlük Kayıt için normal hafta içi günlerinde 8 sa, Cumartesi/Pazar ve tam gün resmî tatilde 0 sa; yarım gün resmî tatilde 4 sa önerilir. Kullanıcı istediği gibi değiştirebilir. Mevcut kayıtları etkilemez.
+- Özet'te son 28 gündeki kaydı olmayan normal iş günleri uyarısı vardır (izinli/çalışılmayan günler için kayıt zorunlu değildir).
+- Haftalık toplu 8 saat doldurma kayıtlı günlere, elle doldurulmuş süreye ve tanınan resmî tatillere dokunmaz. Kaydetmeden önce doldurmayı geri almak mümkündür.
+- Günlük veya haftalık kayıttan sonra son kayıt işlemi tek adımla geri alınabilir; kayıtlar ve FM izni kullanımları birlikte eski hale döner.
+- Türkiye'nin sabit resmî tatilleri bütün yıllarda, dinî bayramlar 2026–2027 için tanımlanmıştır. Diğer yılların hareketli tatilleri ve idari izinler otomatik algılanmaz; kullanıcı kontrol etmelidir.
+- Yerel veri anahtarı `mesaitakip-v2` korunur.

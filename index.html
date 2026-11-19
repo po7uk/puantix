@@ -76,4 +76,25 @@ input[type=date],input[type=time]{width:calc(100% - 5px);max-width:calc(100% - 5
 /* Kaydırmalı çark hareketini koru; iOS'ta çark içine dokunma sayfa kaydırmasın. */
 .wheelScroll{overscroll-behavior-y:contain;touch-action:pan-y;scroll-behavior:auto}
 .wheelOption{user-select:none;-webkit-user-select:none}
-</style></head><body><main id="app" class="app"></main><nav class="tabs" id="tabs"></nav><script src="app.js?v=1.4.1" defer></script></body></html>
+
+.privacyToggle{border:1px solid #d1e0e8;background:#f0f6f8;color:#193f57;border-radius:12px;width:43px;height:43px;display:flex;align-items:center;justify-content:center;cursor:pointer;flex:none}
+.privacyToggle:focus-visible{outline:2px solid #087b6f;outline-offset:2px}
+.privacyToggle svg{display:block}
+.top .shield{display:none}
+.privateAmount{white-space:nowrap;font-variant-numeric:tabular-nums}
+.updateNotice{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#e8f5ec;color:#205c3e;padding:13px;border-radius:13px;margin:12px 0;font-size:13px}
+.updateNotice .tiny{color:#497863}
+.updateControls{text-align:center;padding:10px}
+@media(max-width:370px){.privateAmount{white-space:normal}}
+
+/* 1.5.1: Takvim altındaki ödeme kapanışı bilgilendirmesi */
+.calendarCutoffInfo{margin-top:13px;background:#eff5f8;border:1px solid #d9e6ed;border-radius:13px;padding:12px 13px}
+.calendarCutoffTop{display:flex;align-items:center;gap:8px;flex-wrap:wrap;color:#27465c;font-size:13px}
+.calendarCutoffIcon{font-size:18px;color:#0b766c}
+.calendarCutoffLabel{font-weight:700;flex:1}
+.calendarCutoffTop strong{font-size:13px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.calendarCutoffHelp{margin-top:6px;font-size:11px;line-height:1.5;color:#63788b}
+/* Puantix 1.6: akıllı kayıt ve güvenli geri alma */
+.undoNotice{margin:12px 0;padding:12px;background:#eaf5f1;border:1px solid #c7e9dd;border-radius:12px;display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:13px;color:#205a48}
+.undoNotice .btn{flex:none}.missingLinks{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}.holidayNote{margin-top:5px;color:#98601a;background:#fff4dd;padding:7px 9px;border-radius:9px}
+</style></head><body><main id="app" class="app"></main><nav class="tabs" id="tabs"></nav><script src="app.js?v=1.6" defer></script></body></html>
