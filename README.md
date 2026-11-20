@@ -1,4 +1,4 @@
-# Puantix 1.6 — Akıllı kayıt
+# Puantix 1.8 — Akıllı kayıt
 
 Bu sürüm, 1.5.1 güncellemesinin üzerine eksik gün uyarısı, tatil koruması, kaydı çoğaltma ve geri alma ekler.
 
@@ -83,10 +83,18 @@ ZIP içindeki **10 dosyanın tamamını** `po7uk/puantix` deposunda `main` branc
 - Haftalık giriş, Pzt–Cum 8 saat doldurma ve diğer kayıtlar korunur.
 
 
-## Puantix 1.6 — Akıllı kayıt
+## Puantix 1.8 — Akıllı kayıt
 - Yeni Günlük Kayıt için normal hafta içi günlerinde 8 sa, Cumartesi/Pazar ve tam gün resmî tatilde 0 sa; yarım gün resmî tatilde 4 sa önerilir. Kullanıcı istediği gibi değiştirebilir. Mevcut kayıtları etkilemez.
 - Özet'te son 28 gündeki kaydı olmayan normal iş günleri uyarısı vardır (izinli/çalışılmayan günler için kayıt zorunlu değildir).
 - Haftalık toplu 8 saat doldurma kayıtlı günlere, elle doldurulmuş süreye ve tanınan resmî tatillere dokunmaz. Kaydetmeden önce doldurmayı geri almak mümkündür.
 - Günlük veya haftalık kayıttan sonra son kayıt işlemi tek adımla geri alınabilir; kayıtlar ve FM izni kullanımları birlikte eski hale döner.
 - Türkiye'nin sabit resmî tatilleri bütün yıllarda, dinî bayramlar 2026–2027 için tanımlanmıştır. Diğer yılların hareketli tatilleri ve idari izinler otomatik algılanmaz; kullanıcı kontrol etmelidir.
 - Yerel veri anahtarı `mesaitakip-v2` korunur.
+
+
+## Puantix 1.8
+- Günlük Kayıt: Tarih alanındaki yerel takvim korunur, kartta yatay kaydırma ile önceki/sonraki güne geçilir. Kaydedilmemiş değişiklikte onay alınır.
+- Özet: Tamamlanmış haftalardaki seçimi bekleyen FM hakları ve önümüzdeki 30 günde sona erecek FM izinleri gösterilir.
+- Bordro: Tahmini / gerçekleşen ödeme ve aradaki fark.
+- Raporlar / Bordro: Aylık CSV dışa aktarma ve tarayıcı yazdırma/PDF kaydetme seçeneği.
+- Tutar gizliliği, yedekleme ve FM/izin hesaplama altyapısı korunur.
