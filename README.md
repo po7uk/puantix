@@ -1,3 +1,7 @@
+# Puantix 1.8.1
+
+Günlük Kayıt ekranına, takvimden tarih seçimini ve yatay kaydırmayı koruyan görünür önceki/sonraki gün okları eklendi. Kaydedilmemiş değişikliklerde onay istenir.
+
 # Puantix 1.8 — Akıllı kayıt
 
 Bu sürüm, 1.5.1 güncellemesinin üzerine eksik gün uyarısı, tatil koruması, kaydı çoğaltma ve geri alma ekler.
