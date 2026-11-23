@@ -1,11 +1,11 @@
-# Puantix 1.8.2 — FM toplu karar onayı ve Takvim açık kalma düzeltmesi
+# Puantix 1.8.3 — Ödeme kapanışı FM özeti ve Kayıtta kalma
 
 - Özet ekranında varsayılan ve henüz onaylanmamış FM seçimi **Otomatik Ücret** olarak gösterilir; "Tüm Kararları Onayla" hem seçili Ücret hem de seçilmiş İzin tercihlerini onaylar. Önceden onaylanmış olan kararlar değişmez. Toplu işlem başlamadan önce kaç Ücret/İzin kararı onaylanacağı gösterilerek kullanıcıdan onay alınır.
 - Tamamlanmamış haftalar onaylanamaz. Takvimde tek bir FM kararını onaylamak için "Kararı onayla" kullanılabilir.
 - Eski FM seçimleri saklanır. Eskiden onay bayrağı bulunmayan kararlar, kullanıcı topluca veya tek tek onay verene kadar bekleyen olarak görünür. Tercihler ve FM hesaplamaları değiştirilmez.
 - Takvim → Günlük kayıtları aç/kapat bölümünün açık olması sekmeler arası geçiş ve karar kaydı sonrası korunur; kullanıcı başlığa basınca kapanır.
 - `mesaitakip-v2` yerel veri anahtarı değişmedi, veriler silinmez. JSON yedeği alınması önerilir.
-- `app.js`, `index.html`, `sw.js`, `version.json` sürümü 1.8.2 ile eşleşir.
+- `app.js`, `index.html`, `sw.js`, `version.json` sürümü 1.8.3 ile eşleşir.
 
 # Puantix 1.8.1
 
@@ -111,3 +111,9 @@ ZIP içindeki **10 dosyanın tamamını** `po7uk/puantix` deposunda `main` branc
 - Bordro: Tahmini / gerçekleşen ödeme ve aradaki fark.
 - Raporlar / Bordro: Aylık CSV dışa aktarma ve tarayıcı yazdırma/PDF kaydetme seçeneği.
 - Tutar gizliliği, yedekleme ve FM/izin hesaplama altyapısı korunur.
+
+## Puantix 1.8.3 değişiklikleri
+
+- Özet ekranında **Kapanışa kadar yapılan FM**, seçili ayın 1. gününden o aya ait ödeme kapanış gününe kadar hesaplanır. Hem koyu özet kartı hem ayrıntılı FM kartı aynı kesim tarihini kullanır. Kapanış sonrasındaki FM ayrı **Sonraki aya devreden FM** kartında kalır.
+- Günlük Kayıt > Kaydet, otomatik olarak Takvim sekmesine geçmez; kaydedilen günün düzenlenebilir formunu açık bırakır. Oklar, tarih seçici ve yatay kaydırmayla sonraki güne geçilebilir. Kaydedilen kayıt üzerine gidildiğinde asıl süre korunur.
+- İşlem sonrası geri al düğmesi, veri depolama anahtarı ve önceki ayarlar korunur.
