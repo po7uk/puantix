@@ -1,3 +1,13 @@
+# Puantix 1.8.4 — FM İzin Süresi ve Ücrete Dönüşüm Düzeltmesi
+
+## Yenilikler
+- **Son kullanım günü** ile **ücrete dönüşüm günü** birbirinden ayrıldı. Örn. son kullanım 21 Aralık, ücret dönüşümü 22 Aralık.
+- Özet'te **Bu ay süresi dolacak FM izni** ve **Bu ay süresi dolup ücrete dönüşen FM izni** ayrı gösteriliyor.
+- Süresi dolmamış FM izinleri kullanılabilir toplam bakiyede kalıyor. Güncel ve gelecek ayın Özet ekranındaki bakiye bugünkü kullanılabilir FM iznini; geçmiş ayda ise o ay sonundaki bakiyeyi ifade ediyor.
+- Kullanılmayan hak, altı aylık bitiş tarihinde FM izin bakiyesinden çıkar ve kazanıldığı dönemin saatlik ücret esasıyla bordro kapanışına göre ödeme kalemine aktarılır.
+- Takvim FM hakları, yaklaşan son tarihler ve Yardım/SSS metni buna göre güncellendi.
+- Kullanıcı kayıtları, eski FM kararları ve tüm maaş/bordro ayarları korunur (`mesaitakip-v2`).
+
 # Puantix 1.8.3 — Ödeme kapanışı FM özeti ve Kayıtta kalma
 
 - Özet ekranında varsayılan ve henüz onaylanmamış FM seçimi **Otomatik Ücret** olarak gösterilir; "Tüm Kararları Onayla" hem seçili Ücret hem de seçilmiş İzin tercihlerini onaylar. Önceden onaylanmış olan kararlar değişmez. Toplu işlem başlamadan önce kaç Ücret/İzin kararı onaylanacağı gösterilerek kullanıcıdan onay alınır.
